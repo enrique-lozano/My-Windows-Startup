@@ -1,0 +1,53 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2022-07-26T17:06:22.330-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "Git.Git"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Spotify.Spotify"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://winget.azureedge.net/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.2.11601"
+}
