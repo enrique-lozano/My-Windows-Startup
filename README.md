@@ -4,13 +4,13 @@ Set of steps you perform when starting with a new windows device
 
 ## Setting my apps 💻​
 
-The first step is to uninstall all the applications that are installed by default on the computer, and that you are not going to use. Once this is done, winget is used to import and download the apps that were previously installed. To install this apps, open a powershell (with admin privileges) and type:
+The first step is to uninstall all the applications that are installed by default on the computer, and that you are not going to use. Once this is done, winget is used to import and download the apps that were previously installed. To install this apps, open a powershell (with admin privileges and a RemoteSigned ExecutionPolicy) and type:
 
 ```sh
 winget import -i .\winget_backup.json
 ```
 
-In this case, you have the file winget_backup.json in the _resources_ folder of this repository. If you want to create a new import file because you have new apps or have updated some, type:
+In this case, you have the file winget*backup.json in the \_resources* folder of this repository. If you want to create a new import file because you have new apps or have updated some, type:
 
 ```sh
 winget export -o .\winget_backup.json
