@@ -1,11 +1,14 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-08-29T14:07:36.093-00:00",
+	"CreationDate" : "2023-12-19T19:22:03.580-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
+				{
+					"PackageIdentifier" : "CoreyButler.NVMforWindows"
+				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Community"
 				},
@@ -14,6 +17,12 @@
 				},
 				{
 					"PackageIdentifier" : "Google.AndroidStudio"
+				},
+				{
+					"PackageIdentifier" : "Brave.Brave"
+				},
+				{
+					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
 					"PackageIdentifier" : "GIMP.GIMP"
@@ -31,7 +40,19 @@
 					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.AppInstaller"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DevHome"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "moneymanagerex.moneymanagerex"
+				},
+				{
+					"PackageIdentifier" : "OBSProject.OBSStudio"
 				},
 				{
 					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
@@ -43,13 +64,25 @@
 					"PackageIdentifier" : "Spotify.Spotify"
 				},
 				{
+					"PackageIdentifier" : "Stremio.Stremio"
+				},
+				{
 					"PackageIdentifier" : "KDE.digikam"
 				},
 				{
 					"PackageIdentifier" : "qBittorrent.qBittorrent"
 				},
 				{
+					"PackageIdentifier" : "Python.Launcher"
+				},
+				{
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
+				},
+				{
 					"PackageIdentifier" : "Python.Python.3.11"
+				},
+				{
+					"PackageIdentifier" : "Google.NearbyShare"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
@@ -67,10 +100,13 @@
 					"PackageIdentifier" : "Oracle.JDK.17"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
+					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "VideoLAN.VLC"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
 				},
 				{
 					"PackageIdentifier" : "TheDocumentFoundation.LibreOffice"
@@ -79,13 +115,7 @@
 					"PackageIdentifier" : "GitHub.cli"
 				},
 				{
-					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.22000"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerShell"
 				}
 			],
 			"SourceDetails" : 
@@ -97,5 +127,5 @@
 			}
 		}
 	],
-	"WinGetVersion" : "1.5.2201"
+	"WinGetVersion" : "1.6.3421"
 }
