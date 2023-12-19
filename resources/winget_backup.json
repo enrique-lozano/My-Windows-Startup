@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-12-19T19:22:03.580-00:00",
+	"CreationDate" : "2023-12-19T20:38:39.024-00:00",
 	"Sources" : 
 	[
 		{
@@ -73,6 +73,15 @@
 					"PackageIdentifier" : "qBittorrent.qBittorrent"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
+				},
+				{
+					"PackageIdentifier" : "Python.Launcher"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
+				},
+				{
 					"PackageIdentifier" : "Python.Launcher"
 				},
 				{
@@ -88,16 +97,16 @@
 					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
+					"PackageIdentifier" : "TheDocumentFoundation.LibreOffice"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier" : "SomePythonThings.WingetUIStore"
+					"PackageIdentifier" : "Oracle.JDK.17"
 				},
 				{
-					"PackageIdentifier" : "Oracle.JDK.17"
+					"PackageIdentifier" : "SomePythonThings.WingetUIStore"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
@@ -106,16 +115,13 @@
 					"PackageIdentifier" : "VideoLAN.VLC"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
-					"PackageIdentifier" : "TheDocumentFoundation.LibreOffice"
-				},
-				{
 					"PackageIdentifier" : "GitHub.cli"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.22000"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys"
 				}
 			],
 			"SourceDetails" : 
