@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2023-12-19T20:38:39.024-00:00",
+	"CreationDate" : "2023-12-21T12:54:23.942-00:00",
 	"Sources" : 
 	[
 		{
@@ -55,9 +55,6 @@
 					"PackageIdentifier" : "OBSProject.OBSStudio"
 				},
 				{
-					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
 				},
 				{
@@ -98,6 +95,9 @@
 				},
 				{
 					"PackageIdentifier" : "TheDocumentFoundation.LibreOffice"
+				},
+				{
+					"PackageIdentifier" : "Starship.Starship"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
