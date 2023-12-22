@@ -1,0 +1,233 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
+[cmd_duration]
+min_time = 1200
+format = " took [$duration](bold yellow) "
+
+[directory]
+truncation_length = 3
+truncation_symbol = "~/"
+
+[package]
+version_format = "v${major}.${minor}"
+format = '\[[$symbol$version]($style)\]'
+
+[battery]
+disabled = false
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "🪫"
+
+[[battery.display]]
+threshold = 15
+
+[time]
+disabled = true
+format = '[ 🕙 $time ]($style) '
+time_format = "%I:%M:%S %p"
+utc_time_offset = "+6"
+style = "bold bg:#8a15e2"
+
+[memory_usage]
+format = '\[$symbol[$ram( | $swap)]($style)\]'
+
+[username]
+format = '\[[$user]($style)\]'
+
+[shell]
+disabled = false
+powershell_indicator = ""
+cmd_indicator = ""
+
+[os]
+disabled = false
+format = "$symbol"
+symbols = { Alpaquita = "🔔 ", Alpine = "🏔️ ", Amazon = " ", Android = "🤖 ", Arch = "🎗️ ", Artix = "🎗️ ", CentOS = "💠 ", Debian = "🌀 ", DragonFly = "🐉 ", Emscripten = "🔗 ", EndeavourOS = "🚀 ", Fedora = "🎩 ", FreeBSD = "😈 ", Garuda = "🦅 ", Gentoo = "🗜️ ", HardenedBSD = "🛡️ ", Illumos = "🐦 ", Linux = "🐧 ", Mabox = "📦 ", Macos = "🍎 ", Manjaro = "🥭 ", Mariner = "🌊 ", MidnightBSD = "🌘 ", Mint = "🌿 ", NetBSD = "🚩 ", NixOS = "❄️ ", OpenBSD = "🐡 ", OpenCloudOS = "☁️ ", OracleLinux = "🦴 ", Pop = "🍭 ", Raspbian = "🍓 ", RedHatEnterprise = "🎩 ", Redhat = "🎩 ", Redox = "🧪 ", SUSE = "🦎 ", Solus = "⛵ ", Ubuntu = " ", Unknown = "❓ ", Windows = " ", openEuler = "🦉 ", openSUSE = "🦎 " }
+
+# ---- GIT ----
+
+[git_branch]
+style = "bold #e84d39 inverted"
+format = "on [ $symbol$branch ]($style) "
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+
+# ---- Programming languages / Projects ----
+
+[aws]
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+
+[bun]
+format = '\[[$symbol($version)]($style)\]'
+
+[c]
+format = '\[[$symbol($version(-$name))]($style)\]'
+
+[cmake]
+format = '\[[$symbol($version)]($style)\]'
+
+[cobol]
+format = '\[[$symbol($version)]($style)\]'
+
+[conda]
+format = '\[[$symbol$environment]($style)\]'
+
+[crystal]
+format = '\[[$symbol($version)]($style)\]'
+
+[daml]
+format = '\[[$symbol($version)]($style)\]'
+
+[dart]
+format = '\[[$symbol($version)]($style)\]'
+
+[deno]
+format = '\[[$symbol($version)]($style)\]'
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
+
+[dotnet]
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+
+[elixir]
+format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
+
+[elm]
+format = '\[[$symbol($version)]($style)\]'
+
+[erlang]
+format = '\[[$symbol($version)]($style)\]'
+
+[fennel]
+format = '\[[$symbol($version)]($style)\]'
+
+[fossil_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[gcloud]
+format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
+
+[golang]
+format = '\[[$symbol($version)]($style)\]'
+
+[gradle]
+format = '\[[$symbol($version)]($style)\]'
+
+[guix_shell]
+format = '\[[$symbol]($style)\]'
+
+[haskell]
+format = '\[[$symbol($version)]($style)\]'
+
+[haxe]
+format = '\[[$symbol($version)]($style)\]'
+
+[helm]
+format = '\[[$symbol($version)]($style)\]'
+
+[hg_branch]
+format = '\[[$symbol$branch]($style)\]'
+
+[java]
+format = '\[[$symbol($version)]($style)\]'
+
+[julia]
+format = '\[[$symbol($version)]($style)\]'
+
+[kotlin]
+format = '\[[$symbol($version)]($style)\]'
+
+[kubernetes]
+format = '\[[$symbol$context( \($namespace\))]($style)\]'
+
+[lua]
+format = '\[[$symbol($version)]($style)\]'
+
+[meson]
+format = '\[[$symbol$project]($style)\]'
+
+[nim]
+format = '\[[$symbol($version)]($style)\]'
+
+[nix_shell]
+format = '\[[$symbol$state( \($name\))]($style)\]'
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+
+[ocaml]
+format = '\[[$symbol($version)(\($switch_indicator$switch_name\))]($style)\]'
+
+[opa]
+format = '\[[$symbol($version)]($style)\]'
+
+[openstack]
+format = '\[[$symbol$cloud(\($project\))]($style)\]'
+
+[perl]
+format = '\[[$symbol($version)]($style)\]'
+
+[php]
+format = '\[[$symbol($version)]($style)\]'
+
+[pijul_channel]
+format = '\[[$symbol$channel]($style)\]'
+
+[pulumi]
+format = '\[[$symbol$stack]($style)\]'
+
+[purescript]
+format = '\[[$symbol($version)]($style)\]'
+
+[python]
+format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\]'
+
+[raku]
+format = '\[[$symbol($version-$vm_version)]($style)\]'
+
+[red]
+format = '\[[$symbol($version)]($style)\]'
+
+[ruby]
+format = '\[[$symbol($version)]($style)\]'
+
+[rust]
+format = '\[[$symbol($version)]($style)\]'
+
+[scala]
+format = '\[[$symbol($version)]($style)\]'
+
+[spack]
+format = '\[[$symbol$environment]($style)\]'
+
+[sudo]
+format = '\[[as $symbol]($style)\]'
+
+[swift]
+format = '\[[$symbol($version)]($style)\]'
+
+[terraform]
+format = '\[[$symbol$workspace]($style)\]'
+
+[vagrant]
+format = '\[[$symbol($version)]($style)\]'
+
+[vlang]
+format = '\[[$symbol($version)]($style)\]'
+
+[zig]
+format = '\[[$symbol($version)]($style)\]'
+
+[solidity]
+format = '\[[$symbol($version)]($style)\]'
