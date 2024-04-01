@@ -88,7 +88,7 @@
 					"PackageIdentifier" : "Python.Python.3.11"
 				},
 				{
-					"PackageIdentifier" : "Google.NearbyShare"
+					"PackageIdentifier" : "Google.QuickShare"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.CLRTypesSQLServer.2019"
@@ -116,9 +116,6 @@
 				},
 				{
 					"PackageIdentifier" : "GitHub.cli"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsSDK.10.0.22000"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
