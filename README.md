@@ -66,6 +66,6 @@ If you don't see all the characters and icons in your terminal it's because you 
 
 There is little to do here. Simply sign in with your github or Microsoft account so that all extensions and settings are synced to their previous state.
 
-To make the font used in the code look more beautiful, the use of [FiraCode](https://github.com/tonsky/FiraCode) is recommended.
+To make the font used in the code look more beautiful, the use of [FiraCode](https://github.com/tonsky/FiraCode) or [Cascadia Code](https://github.com/microsoft/cascadia-code) is recommended.
 
 Also, if you haven't already done so and if you prefer to use the terminal in vscode, you'll need to set the vscode terminal font to the same as your Windows Terminal, using the (`terminal.integrated.fontFamily`) option. You may also have to change your default vscode terminal.
