@@ -22,43 +22,33 @@ If everything has gone correctly, a new import file should have been created in 
 
 From now on it is recommended to **always use the app Windows Terminal**, with the new Powershell by default (not to be confused with the old Windows Powershell 5.x). This new powershell should have been installed in the previous steps, when importing winget json file.
 
-This new powershell includes by default the PSReadLine module, which allows us to have autocomplete among other options. Additionally, thanks to the previous step we should have [Startship](https://starship.rs/) installed, which will allow us to improve the appearance of our terminal if we want.
+This new powershell includes by default the PSReadLine module, which allows us to have autocomplete among other options. Additionally, thanks to the previous step we should have [Oh My Posh](https://ohmyposh.dev/) installed, which will allow us to improve the appearance of our terminal if we want.
 
 To start configuring the terminal we must open its configuration file, using the following command:
 
-```sh
+```
 notepad $PROFILE
 ```
 
 If the command fails because the file does not exist we can try with:
 
-```sh
+```
 New-Item -Path $PROFILE -Type File -Force
 ```
 
 Once we have the file open, we add the following lines:
 
-```sh
-Invoke-Expression (&starship init powershell)
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+```
+oh-my-posh init pwsh --config='C:\Users\{your_user}\...\...\terminal_theme.json' | Invoke-Expression
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -HistoryNoDuplicates
+Set-PSReadLineOption -PredictionViewStyle ListView
 ```
+
+
+To fully customize the appearance of your terminal first you should download the [Oh My Posh template](https://github.com/enrique-lozano/My-Windows-Startup/tree/master/resources) that we have in this repo and put its global path into the first line of the text above.
 
 Restart your terminal after this and if there are no errors, everything is fine so far.
-
-To fully customize the appearance of your terminal first you should create a `.config` directory inside your `C:\Users\{your_username}` directory. Then you should create the config file that the Starship library will use, creating a file called `starship.toml`. You could make all this steps by typing the following commands:
-
-```sh
-# In Powershell:
-New-Item -ItemType Directory -Force ~/.config;New-Item -ItemType file ~/.config/starship.toml;
-
-# Using git-bash or linux:
-mkdir -p ~/.config && touch ~/.config/starship.toml
-```
-
-Then you can copy the example template that we have under the `resources` directory of this repo. After restarting your terminal you should see the new styling!
 
 If you don't see all the characters and icons in your terminal it's because you haven't yet installed a compatible font for the terminal. These are called Nerd Fonts, and you can find them [here](https://www.nerdfonts.com/font-downloads).
 
